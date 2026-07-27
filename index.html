@@ -1,25 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đặng Quang Huy - Backend Developer | Portfolio</title>
-    <meta name="description" content="Trang web cá nhân của Đặng Quang Huy - Backend Developer chuyên về Golang, Microservices và thiết kế hệ thống hiệu năng cao.">
-    <meta name="keywords" content="Đặng Quang Huy, Backend Developer, Golang, Microservices, Portfolio, CV, Web Developer">
-    <meta name="author" content="Đặng Quang Huy">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <meta
+      name="description"
+      content="Trang web cá nhân của Đặng Quang Huy - Backend Developer chuyên về Golang, Microservices và thiết kế hệ thống hiệu năng cao."
+    />
+    <meta
+      name="keywords"
+      content="Đặng Quang Huy, Backend Developer, Golang, Microservices, Portfolio, CV, Web Developer"
+    />
+    <meta name="author" content="Đặng Quang Huy" />
+
+    <!-- Google Fonts (Inter + Noto Sans - Vietnamese support) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans:wght@400;600;700&subset=vietnamese&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Background Elements -->
     <div class="blob-bg blob-1"></div>
     <div class="blob-bg blob-2"></div>
@@ -27,334 +39,492 @@
 
     <!-- Navigation Header -->
     <header class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <span class="logo-accent">&lt;</span>HuyDang<span class="logo-accent">/&gt;</span>
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <nav class="nav-menu" id="navMenu">
-                <ul>
-                    <li><a href="#about" class="nav-link active">Giới thiệu</a></li>
-                    <li><a href="#objectives" class="nav-link">Mục tiêu</a></li>
-                    <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
-                    <li><a href="#experience" class="nav-link">Kinh nghiệm</a></li>
-                    <li><a href="#education" class="nav-link">Học vấn</a></li>
-                </ul>
-            </nav>
-            <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider round">
-                        <i class="fa-solid fa-moon"></i>
-                        <i class="fa-solid fa-sun"></i>
-                    </div>
-                </label>
+      <div class="nav-container">
+        <a href="#" class="logo">
+          <span class="logo-accent">&lt;</span>HuyDang<span class="logo-accent"
+            >/&gt;</span
+          >
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle Navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="#about" class="nav-link active">Giới thiệu</a></li>
+            <li><a href="#objectives" class="nav-link">Mục tiêu</a></li>
+            <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+            <li><a href="#experience" class="nav-link">Kinh nghiệm</a></li>
+            <li><a href="#education" class="nav-link">Học vấn</a></li>
+          </ul>
+        </nav>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+              <i class="fa-solid fa-moon"></i>
+              <i class="fa-solid fa-sun"></i>
             </div>
+          </label>
         </div>
+      </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="about" class="hero-section">
-            <div class="section-container hero-grid">
-                <div class="hero-content">
-                    <span class="badge fade-in">Backend Developer</span>
-                    <h1 class="hero-title fade-in">Đặng Quang Huy</h1>
-                    <p class="hero-subtitle fade-in">
-                        Xin chào! Tôi là một kỹ sư phát triển Backend tập trung vào xây dựng các hệ thống microservices hiệu năng cao, ổn định và có khả năng mở rộng lớn bằng Golang.
+      <!-- Hero Section -->
+      <section id="about" class="hero-section">
+        <div class="section-container hero-grid">
+          <div class="hero-content">
+            <span class="badge fade-in">Backend Developer</span>
+            <h1 class="hero-title fade-in">Đặng Quang Huy</h1>
+            <p class="hero-subtitle fade-in">
+              Xin chào! Tôi là một kỹ sư phát triển Backend tập trung vào xây
+              dựng các hệ thống microservices hiệu năng cao, ổn định và có khả
+              năng mở rộng lớn bằng Golang.
+            </p>
+
+            <div class="hero-highlight fade-in">
+              <div class="highlight-pill">
+                <i class="fa-solid fa-bolt"></i>
+                Tập trung vào hiệu năng, độ tin cậy và khả năng mở rộng
+              </div>
+              <div class="highlight-stats">
+                <div>
+                  <strong>3+</strong>
+                  <span>Năm backend</span>
+                </div>
+                <div>
+                  <strong>5+</strong>
+                  <span>Hệ thống lớn</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-grid fade-in">
+              <div class="contact-item">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>20/10/2001 (Nam)</span>
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:0983192540">0983192540</a>
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:dhuy09031@gmail.com">dhuy09031@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Nam Phù, Hà Nội</span>
+              </div>
+            </div>
+
+            <div class="hero-actions fade-in">
+              <a
+                href="https://github.com/huydang1020/huyshop"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+              >
+                <i class="fa-brands fa-github"></i> GitHub Profile
+              </a>
+              <a href="#experience" class="btn btn-secondary"
+                >Xem Kinh Nghiệm</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-visual fade-in">
+            <div class="avatar-container">
+              <div class="avatar-gradient"></div>
+              <!-- SVG Abstract Tech/Backend Illustration instead of blank placeholder -->
+              <div class="avatar-placeholder">
+                <svg
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="tech-svg"
+                >
+                  <defs>
+                    <linearGradient
+                      id="svg-grad"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop offset="0%" stop-color="#8b5cf6" />
+                      <stop offset="100%" stop-color="#3b82f6" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    cx="100"
+                    cy="100"
+                    r="85"
+                    fill="none"
+                    stroke="url(#svg-grad)"
+                    stroke-width="4"
+                    stroke-dasharray="10 5"
+                    class="rot-circle"
+                  />
+                  <rect
+                    x="60"
+                    y="60"
+                    width="80"
+                    height="80"
+                    rx="10"
+                    fill="url(#svg-grad)"
+                    opacity="0.15"
+                    class="pulse-rect"
+                  />
+                  <text
+                    x="100"
+                    y="105"
+                    font-family="'Outfit', sans-serif"
+                    font-size="28"
+                    font-weight="bold"
+                    fill="url(#svg-grad)"
+                    text-anchor="middle"
+                  >
+                    &lt;Go/&gt;
+                  </text>
+                  <path
+                    d="M40,150 Q100,100 160,150"
+                    stroke="url(#svg-grad)"
+                    stroke-width="2"
+                    fill="none"
+                    opacity="0.5"
+                  />
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="6"
+                    fill="#3b82f6"
+                    class="float-dot-1"
+                  />
+                  <circle
+                    cx="150"
+                    cy="140"
+                    r="8"
+                    fill="#8b5cf6"
+                    class="float-dot-2"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Objectives Section -->
+      <section id="objectives" class="objectives-section">
+        <div class="section-container">
+          <div class="section-header">
+            <h2 class="section-title">Mục Tiêu Nghề Nghiệp</h2>
+            <div class="section-divider"></div>
+          </div>
+          <div class="objectives-grid">
+            <div class="objective-card card">
+              <div class="card-icon">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <h3>Ngắn hạn</h3>
+              <p>
+                Phát triển chuyên sâu Backend với Golang và Microservices, nâng
+                cao kỹ năng thiết kế hệ thống và tối ưu hiệu năng.
+              </p>
+            </div>
+            <div class="objective-card card">
+              <div class="card-icon">
+                <i class="fa-solid fa-arrow-up-right-dots"></i>
+              </div>
+              <h3>Dài hạn</h3>
+              <p>
+                Trở thành Backend Engineer thực thụ có năng lực xây dựng, vận
+                hành và scale các hệ thống lớn, đảm bảo tính ổn định và tính sẵn
+                sàng cao.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <div class="section-container">
+          <div class="section-header">
+            <h2 class="section-title">Kỹ Năng Chuyên Môn</h2>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card card">
+              <div class="skill-header">
+                <i class="fa-solid fa-code"></i>
+                <h3>Backend Development</h3>
+              </div>
+              <p>
+                Phát triển API và dịch vụ backend sử dụng Golang, gRPC, RESTful
+                API theo kiến trúc Microservices.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Golang</span>
+                <span class="tag">gRPC</span>
+                <span class="tag">RESTful API</span>
+                <span class="tag">Microservices</span>
+              </div>
+            </div>
+
+            <div class="skill-card card">
+              <div class="skill-header">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database & Optimization</h3>
+              </div>
+              <p>
+                Thiết kế database và tối ưu truy vấn MySQL/PostgreSQL, cải thiện
+                hiệu năng và giảm thời gian phản hồi API.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">MySQL</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Query Tuning</span>
+                <span class="tag">Database Design</span>
+              </div>
+            </div>
+
+            <div class="skill-card card">
+              <div class="skill-header">
+                <i class="fa-solid fa-network-wired"></i>
+                <h3>System Integration</h3>
+              </div>
+              <p>
+                Tích hợp hệ thống bên thứ ba (payment, POS, external API) và xử
+                lý các vấn đề liên quan đến timeout, SSL, authentication.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Payment APIs</span>
+                <span class="tag">POS Integration</span>
+                <span class="tag">OAuth 2.0</span>
+                <span class="tag">SSL/TLS</span>
+              </div>
+            </div>
+
+            <div class="skill-card card">
+              <div class="skill-header">
+                <i class="fa-solid fa-bug-slash"></i>
+                <h3>Ops & Debugging</h3>
+              </div>
+              <p>
+                Kinh nghiệm xử lý sự cố trên môi trường production, debug lỗi
+                API, database và hệ thống mạng.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Production Logs</span>
+                <span class="tag">Troubleshooting</span>
+                <span class="tag">Network Debugging</span>
+                <span class="tag">System Metrics</span>
+              </div>
+            </div>
+
+            <div class="skill-card card">
+              <div class="skill-header">
+                <i class="fa-solid fa-robot"></i>
+                <h3>AI-Assisted Development</h3>
+              </div>
+              <p>
+                Sử dụng thành thạo các AI Coding Agent hiện đại như Cursor,
+                Antigravity để tối ưu quy trình lập trình, debug và tự động hóa
+                tác vụ.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Antigravity</span>
+                <span class="tag">Cursor</span>
+                <span class="tag">AI Workflows</span>
+                <span class="tag">Automation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Experience Section -->
+      <section id="experience" class="experience-section">
+        <div class="section-container">
+          <div class="section-header">
+            <h2 class="section-title">Kinh Nghiệm Làm Việc</h2>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="timeline">
+            <!-- Company Card -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content card">
+                <div class="timeline-header">
+                  <span class="timeline-date">01/2022 - 02/2026</span>
+                  <h3>Công ty CP Công nghệ Truyền thông Số 1 (Media - one)</h3>
+                  <h4 class="role-title">Backend Developer</h4>
+                </div>
+
+                <p class="company-intro">
+                  Tham gia thiết kế, phát triển và tối ưu các hệ thống trung tâm
+                  phục vụ các dịch vụ quản lý voucher, điểm thưởng, mua sắm và
+                  thanh toán.
+                </p>
+
+                <div class="projects-container">
+                  <!-- Project 1 -->
+                  <div class="project-block">
+                    <div class="project-title-bar">
+                      <i class="fa-solid fa-diagram-project"></i>
+                      <h5>Dự án Merchange</h5>
+                    </div>
+                    <p class="project-desc">
+                      Hệ thống quản lý và phân phối dữ liệu trung tâm, cung cấp
+                      mã voucher cho toàn bộ hệ thống công ty và đối tác bên thứ
+                      ba.
                     </p>
-                    
-                    <div class="contact-info-grid fade-in">
-                        <div class="contact-item">
-                            <i class="fa-solid fa-calendar-days"></i>
-                            <span>20/10/2001 (Nam)</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fa-solid fa-phone"></i>
-                            <a href="tel:0983192540">0983192540</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:dhuy09031@gmail.com">dhuy09031@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Nam Phù, Hà Nội</span>
-                        </div>
+                    <ul class="project-details">
+                      <li>
+                        Thiết kế và phát triển API bằng Golang, gRPC, RESTful
+                        API.
+                      </li>
+                      <li>
+                        Duy trì và phát triển kiến trúc Microservices cho toàn
+                        hệ thống.
+                      </li>
+                      <li>
+                        Tích hợp hệ thống bên thứ ba (thanh toán, quản lý bán
+                        hàng, v.v.).
+                      </li>
+                      <li>
+                        Tối ưu truy vấn MySQL/PostgreSQL, giảm đáng kể thời gian
+                        phản hồi API.
+                      </li>
+                      <li>
+                        Xử lý sự cố production: timeout, SSL, memory leak, lỗi
+                        kết nối DB.
+                      </li>
+                      <li>
+                        Mở rộng chức năng linh hoạt đáp ứng nhu cầu từ các đối
+                        tác ngoài và nội bộ (MShop, MSpa).
+                      </li>
+                      <li>
+                        Tích hợp hệ thống loyalty/điểm thưởng với Viettel,
+                        MBBank và xử lý quy đổi voucher phức tạp.
+                      </li>
+                    </ul>
+                    <div class="project-tech">
+                      <span class="mini-tag">Golang</span>
+                      <span class="mini-tag">gRPC</span>
+                      <span class="mini-tag">Microservices</span>
+                      <span class="mini-tag">MySQL</span>
+                      <span class="mini-tag">PostgreSQL</span>
                     </div>
+                  </div>
 
-                    <div class="hero-actions fade-in">
-                        <a href="https://github.com/huydang1020/huyshop" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                            <i class="fa-brands fa-github"></i> GitHub Profile
-                        </a>
-                        <a href="#experience" class="btn btn-secondary">Xem Kinh Nghiệm</a>
+                  <!-- Project 2 -->
+                  <div class="project-block">
+                    <div class="project-title-bar">
+                      <i class="fa-solid fa-recycle"></i>
+                      <h5>Dự án Mgreen</h5>
                     </div>
-                </div>
-                
-                <div class="hero-visual fade-in">
-                    <div class="avatar-container">
-                        <div class="avatar-gradient"></div>
-                        <!-- SVG Abstract Tech/Backend Illustration instead of blank placeholder -->
-                        <div class="avatar-placeholder">
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="tech-svg">
-                                <defs>
-                                    <linearGradient id="svg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#8b5cf6" />
-                                        <stop offset="100%" stop-color="#3b82f6" />
-                                    </linearGradient>
-                                </defs>
-                                <circle cx="100" cy="100" r="85" fill="none" stroke="url(#svg-grad)" stroke-width="4" stroke-dasharray="10 5" class="rot-circle"/>
-                                <rect x="60" y="60" width="80" height="80" rx="10" fill="url(#svg-grad)" opacity="0.15" class="pulse-rect" />
-                                <text x="100" y="105" font-family="'Outfit', sans-serif" font-size="28" font-weight="bold" fill="url(#svg-grad)" text-anchor="middle">&lt;Go/&gt;</text>
-                                <path d="M40,150 Q100,100 160,150" stroke="url(#svg-grad)" stroke-width="2" fill="none" opacity="0.5" />
-                                <circle cx="50" cy="50" r="6" fill="#3b82f6" class="float-dot-1" />
-                                <circle cx="150" cy="140" r="8" fill="#8b5cf6" class="float-dot-2" />
-                            </svg>
-                        </div>
+                    <p class="project-desc">
+                      Hệ thống cung cấp các tiện ích quản lý trong quy trình thu
+                      mua phế liệu thông minh.
+                    </p>
+                    <ul class="project-details">
+                      <li>
+                        Chủ trì nâng cấp, phát triển tính năng và xử lý sự cố
+                        cho hệ thống kế thừa.
+                      </li>
+                      <li>Phát triển API bằng Golang, gRPC và RESTful API.</li>
+                      <li>
+                        Duy trì kiến trúc Microservices ổn định và tối ưu hóa
+                        hiệu suất DB.
+                      </li>
+                    </ul>
+                    <div class="project-tech">
+                      <span class="mini-tag">Golang</span>
+                      <span class="mini-tag">gRPC</span>
+                      <span class="mini-tag">MySQL</span>
                     </div>
+                  </div>
+
+                  <!-- Project 3 -->
+                  <div class="project-block">
+                    <div class="project-title-bar">
+                      <i class="fa-solid fa-store"></i>
+                      <h5>Dự án MShop, MSpa</h5>
+                    </div>
+                    <p class="project-desc">
+                      Nền tảng quản lý và mua bán sản phẩm dành cho nhà bán lẻ
+                      và đối tác.
+                    </p>
+                    <ul class="project-details">
+                      <li>
+                        Thiết kế và phát triển API bằng TypeScript đối với các
+                        tính năng mới hoặc nâng cấp.
+                      </li>
+                      <li>
+                        Tích hợp đồng bộ dữ liệu và voucher từ hệ thống cốt lõi
+                        Merchange.
+                      </li>
+                    </ul>
+                    <div class="project-tech">
+                      <span class="mini-tag">TypeScript</span>
+                      <span class="mini-tag">REST API</span>
+                      <span class="mini-tag">Data Sync</span>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Objectives Section -->
-        <section id="objectives" class="objectives-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title">Mục Tiêu Nghề Nghiệp</h2>
-                    <div class="section-divider"></div>
-                </div>
-                <div class="objectives-grid">
-                    <div class="objective-card card">
-                        <div class="card-icon">
-                            <i class="fa-solid fa-bullseye"></i>
-                        </div>
-                        <h3>Ngắn hạn</h3>
-                        <p>Phát triển chuyên sâu Backend với Golang và Microservices, nâng cao kỹ năng thiết kế hệ thống và tối ưu hiệu năng.</p>
-                    </div>
-                    <div class="objective-card card">
-                        <div class="card-icon">
-                            <i class="fa-solid fa-arrow-up-right-dots"></i>
-                        </div>
-                        <h3>Dài hạn</h3>
-                        <p>Trở thành Backend Engineer thực thụ có năng lực xây dựng, vận hành và scale các hệ thống lớn, đảm bảo tính ổn định và tính sẵn sàng cao.</p>
-                    </div>
-                </div>
+      <!-- Education Section -->
+      <section id="education" class="education-section">
+        <div class="section-container">
+          <div class="section-header">
+            <h2 class="section-title">Học Vấn</h2>
+            <div class="section-divider"></div>
+          </div>
+
+          <div class="education-grid">
+            <div class="education-card card">
+              <div class="edu-year">2019 - 2023</div>
+              <i class="fa-solid fa-user-graduate edu-icon"></i>
+              <h3>Học viện Công nghệ BKACAD</h3>
+              <p class="degree">Cao đẳng nghề Bách Khoa Hà Nội</p>
+              <p class="major">Kỹ sư thực hành Công nghệ thông tin</p>
+              <span class="grade">Xếp loại: Khá</span>
             </div>
-        </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title">Kỹ Năng Chuyên Môn</h2>
-                    <div class="section-divider"></div>
-                </div>
-                
-                <div class="skills-grid">
-                    <div class="skill-card card">
-                        <div class="skill-header">
-                            <i class="fa-solid fa-code"></i>
-                            <h3>Backend Development</h3>
-                        </div>
-                        <p>Phát triển API và dịch vụ backend sử dụng Golang, gRPC, RESTful API theo kiến trúc Microservices.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Golang</span>
-                            <span class="tag">gRPC</span>
-                            <span class="tag">RESTful API</span>
-                            <span class="tag">Microservices</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card card">
-                        <div class="skill-header">
-                            <i class="fa-solid fa-database"></i>
-                            <h3>Database & Optimization</h3>
-                        </div>
-                        <p>Thiết kế database và tối ưu truy vấn MySQL/PostgreSQL, cải thiện hiệu năng và giảm thời gian phản hồi API.</p>
-                        <div class="tech-tags">
-                            <span class="tag">MySQL</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Query Tuning</span>
-                            <span class="tag">Database Design</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card card">
-                        <div class="skill-header">
-                            <i class="fa-solid fa-network-wired"></i>
-                            <h3>System Integration</h3>
-                        </div>
-                        <p>Tích hợp hệ thống bên thứ ba (payment, POS, external API) và xử lý các vấn đề liên quan đến timeout, SSL, authentication.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Payment APIs</span>
-                            <span class="tag">POS Integration</span>
-                            <span class="tag">OAuth 2.0</span>
-                            <span class="tag">SSL/TLS</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card card">
-                        <div class="skill-header">
-                            <i class="fa-solid fa-bug-slash"></i>
-                            <h3>Ops & Debugging</h3>
-                        </div>
-                        <p>Kinh nghiệm xử lý sự cố trên môi trường production, debug lỗi API, database và hệ thống mạng.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Production Logs</span>
-                            <span class="tag">Troubleshooting</span>
-                            <span class="tag">Network Debugging</span>
-                            <span class="tag">System Metrics</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card card">
-                        <div class="skill-header">
-                            <i class="fa-solid fa-robot"></i>
-                            <h3>AI-Assisted Development</h3>
-                        </div>
-                        <p>Sử dụng thành thạo các AI Coding Agent hiện đại như Cursor, Antigravity để tối ưu quy trình lập trình, debug và tự động hóa tác vụ.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Antigravity</span>
-                            <span class="tag">Cursor</span>
-                            <span class="tag">AI Workflows</span>
-                            <span class="tag">Automation</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="education-card card">
+              <div class="edu-year">2023 - 2025</div>
+              <i class="fa-solid fa-graduation-cap edu-icon"></i>
+              <h3>Đại học Giao thông Vận tải</h3>
+              <p class="degree">Cử nhân Công nghệ thông tin</p>
+              <span class="grade">Xếp loại: Khá</span>
             </div>
-        </section>
-
-        <!-- Work Experience Section -->
-        <section id="experience" class="experience-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title">Kinh Nghiệm Làm Việc</h2>
-                    <div class="section-divider"></div>
-                </div>
-
-                <div class="timeline">
-                    <!-- Company Card -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content card">
-                            <div class="timeline-header">
-                                <span class="timeline-date">01/2022 - 02/2026</span>
-                                <h3>Công ty CP Công nghệ Truyền thông Số 1 (Media - one)</h3>
-                                <h4 class="role-title">Backend Developer</h4>
-                            </div>
-                            
-                            <p class="company-intro">Tham gia thiết kế, phát triển và tối ưu các hệ thống trung tâm phục vụ các dịch vụ quản lý voucher, điểm thưởng, mua sắm và thanh toán.</p>
-                            
-                            <div class="projects-container">
-                                <!-- Project 1 -->
-                                <div class="project-block">
-                                    <div class="project-title-bar">
-                                        <i class="fa-solid fa-diagram-project"></i>
-                                        <h5>Dự án Merchange</h5>
-                                    </div>
-                                    <p class="project-desc">Hệ thống quản lý và phân phối dữ liệu trung tâm, cung cấp mã voucher cho toàn bộ hệ thống công ty và đối tác bên thứ ba.</p>
-                                    <ul class="project-details">
-                                        <li>Thiết kế và phát triển API bằng Golang, gRPC, RESTful API.</li>
-                                        <li>Duy trì và phát triển kiến trúc Microservices cho toàn hệ thống.</li>
-                                        <li>Tích hợp hệ thống bên thứ ba (thanh toán, quản lý bán hàng, v.v.).</li>
-                                        <li>Tối ưu truy vấn MySQL/PostgreSQL, giảm đáng kể thời gian phản hồi API.</li>
-                                        <li>Xử lý sự cố production: timeout, SSL, memory leak, lỗi kết nối DB.</li>
-                                        <li>Mở rộng chức năng linh hoạt đáp ứng nhu cầu từ các đối tác ngoài và nội bộ (MShop, MSpa).</li>
-                                        <li>Tích hợp hệ thống loyalty/điểm thưởng với Viettel, MBBank và xử lý quy đổi voucher phức tạp.</li>
-                                    </ul>
-                                    <div class="project-tech">
-                                        <span class="mini-tag">Golang</span>
-                                        <span class="mini-tag">gRPC</span>
-                                        <span class="mini-tag">Microservices</span>
-                                        <span class="mini-tag">MySQL</span>
-                                        <span class="mini-tag">PostgreSQL</span>
-                                    </div>
-                                </div>
-
-                                <!-- Project 2 -->
-                                <div class="project-block">
-                                    <div class="project-title-bar">
-                                        <i class="fa-solid fa-recycle"></i>
-                                        <h5>Dự án Mgreen</h5>
-                                    </div>
-                                    <p class="project-desc">Hệ thống cung cấp các tiện ích quản lý trong quy trình thu mua phế liệu thông minh.</p>
-                                    <ul class="project-details">
-                                        <li>Chủ trì nâng cấp, phát triển tính năng và xử lý sự cố cho hệ thống kế thừa.</li>
-                                        <li>Phát triển API bằng Golang, gRPC và RESTful API.</li>
-                                        <li>Duy trì kiến trúc Microservices ổn định và tối ưu hóa hiệu suất DB.</li>
-                                    </ul>
-                                    <div class="project-tech">
-                                        <span class="mini-tag">Golang</span>
-                                        <span class="mini-tag">gRPC</span>
-                                        <span class="mini-tag">MySQL</span>
-                                    </div>
-                                </div>
-
-                                <!-- Project 3 -->
-                                <div class="project-block">
-                                    <div class="project-title-bar">
-                                        <i class="fa-solid fa-store"></i>
-                                        <h5>Dự án MShop, MSpa</h5>
-                                    </div>
-                                    <p class="project-desc">Nền tảng quản lý và mua bán sản phẩm dành cho nhà bán lẻ và đối tác.</p>
-                                    <ul class="project-details">
-                                        <li>Thiết kế và phát triển API bằng TypeScript đối với các tính năng mới hoặc nâng cấp.</li>
-                                        <li>Tích hợp đồng bộ dữ liệu và voucher từ hệ thống cốt lõi Merchange.</li>
-                                    </ul>
-                                    <div class="project-tech">
-                                        <span class="mini-tag">TypeScript</span>
-                                        <span class="mini-tag">REST API</span>
-                                        <span class="mini-tag">Data Sync</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="education-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title">Học Vấn</h2>
-                    <div class="section-divider"></div>
-                </div>
-
-                <div class="education-grid">
-                    <div class="education-card card">
-                        <div class="edu-year">2023 - 2025</div>
-                        <i class="fa-solid fa-graduation-cap edu-icon"></i>
-                        <h3>Đại học Giao thông Vận tải</h3>
-                        <p class="degree">Cử nhân Công nghệ thông tin</p>
-                        <span class="grade">Xếp loại: Khá</span>
-                    </div>
-
-                    <div class="education-card card">
-                        <div class="edu-year">2019 - 2023</div>
-                        <i class="fa-solid fa-user-graduate edu-icon"></i>
-                        <h3>Học viện Công nghệ BKACAD</h3>
-                        <p class="degree">Cao đẳng nghề Bách Khoa Hà Nội</p>
-                        <p class="major">Kỹ sư thực hành Công nghệ thông tin</p>
-                        <span class="grade">Xếp loại: Khá</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <p>&copy; 2026 Đặng Quang Huy. All rights reserved.</p>
-            <p>Thiết kế bởi Antigravity Agent &bull; Code sạch & Tối ưu</p>
-        </div>
+      <div class="footer-container">
+        <p>&copy; 2026 Đặng Quang Huy. All rights reserved.</p>
+        <p>Thiết kế bởi Antigravity Agent &bull; Code sạch & Tối ưu</p>
+      </div>
     </footer>
 
     <!-- Custom JS -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
